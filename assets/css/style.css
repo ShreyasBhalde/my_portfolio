@@ -612,7 +612,7 @@ main {
  * #testimonials-modal
  */
 
-.modal-container {
+/* .modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -719,7 +719,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
-}
+} */
 
 
 /**
@@ -1441,7 +1441,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* testimonials modal */
 
-  .modal-container { padding: 20px; }
+  /* .modal-container { padding: 20px; }
 
   .testimonials-modal {
     display: flex;
@@ -1469,7 +1469,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: block;
     flex-grow: 1;
     width: 35px;
-  }
+  } */
 
   /* clients */
 
@@ -1585,14 +1585,14 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   /* testimonials modal */
-
+/* 
   .testimonials-modal {
     gap: 35px;
     max-width: 680px;
   }
 
   .modal-avatar-box img { width: 80px; }
-
+ */
 
 
   /**
@@ -1971,3 +1971,93 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ccc;
   font-size: 14px;
 }
+.modal-container {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  padding: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-modal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: stretch;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.modal-img-wrapper {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-img-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.modal-img-wrapper {
+  flex: 1 1 40%;
+}
+
+.modal-content {
+  flex: 1 1 55%;
+  color: #fff;
+}
+
+.modal-avatar-box img {
+  border-radius: 18px;
+  
+}
+
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ffd369;
+  color: #000;
+  padding: 8px 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-badge {
+  background-color: #333;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+

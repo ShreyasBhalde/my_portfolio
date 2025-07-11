@@ -178,7 +178,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <!-- <li class="navbar-item">
@@ -201,7 +201,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about " data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -277,10 +277,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Deployment (AWS)</h4>
+                <h4 class="h4 service-item-title">Cloud Deployment</h4>
 
                 <p class="service-item-text">
-                Deploying applications using AWS EC2, S3, RDS, and Lambda with secure and optimized infrastructure.
+                  Experience deploying full-stack applications using AWS services (EC2, S3, RDS, Lambda) and Python Anywhere (Flask/Django with WSGI setup).
                 </p>
               </div>
 
@@ -833,10 +833,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio active" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">projects</h2>
         </header>
 
         <section class="projects">
@@ -844,19 +844,19 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button class="active" data-filter-btn></button>
             </li>
 
             <!-- <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Web design</button>
+            </li> -->
+<!-- 
+            <li class="filter-item">
+              <button data-filter-btn>Personal</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Freelance</button>
             </li> -->
 
           </ul>
@@ -874,22 +874,22 @@
             </button>
 
             <ul class="select-list">
-
+<!-- 
               <li class="select-item">
                 <button data-select-item>All</button>
+              </li> -->
+
+              <!-- <li class="select-item">
+                <button data-select-item>Personal</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
+                <button data-select-item>Freelance</button>
+              </li> -->
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
+              <!-- <li class="select-item">
+                <button data-select-item>Personal</button>
+              </li> -->
 
             </ul>
 
@@ -897,56 +897,52 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="personal">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box" data-modal-target="#modal-recipe">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/proj_img/recipe_web_app.jpg" alt="Recipe Web App" loading="lazy">
+                </figure>
+                <h3 class="project-title">Yummyrecipe - Recipe Web Application</h3>
+                <!-- <p class="project-category">personal</p> -->
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="personal">
               <a href="#">
 
-                <figure class="project-img">
+                <figure class="project-img" data-modal-target="#modal-kaalakshar">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/proj_img/kaalaskhar.jpg" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Kaalakshar – Coaching Class Platform</h3>
 
-                <p class="project-category">Web development</p>
+                <!-- <p class="project-category">personal</p> -->
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="freelance">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <div class="project-item-icon-box" data-modal-target="#modal-food">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/proj_img/food_order.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Bhalde's Feast - Food Ordering Web Application</h3>
 
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
+                <!-- <p class="project-category">freelance</p> -->
 
               </a>
             </li>
@@ -955,109 +951,75 @@
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <div class="project-item-icon-box" data-modal-target="#modal-closetunes">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/proj_img/ct_songs.jpg" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">CloseTunes - Music streaming platform</h3>
 
-                <p class="project-category">Applications</p>
+                <!-- <p class="project-category">Applications</p> -->
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="freelance">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <div class="project-item-icon-box" data-modal-target="#modal-customer_support"> 
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/proj_img/customer_support.jpg" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Customer Support Web Application</h3>
 
-                <p class="project-category">Web design</p>
+                <!-- <p class="project-category">freelance</p> -->
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="freelance">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <div class="project-item-icon-box" data-modal-target="#modal-bms">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/proj_img/bms.jpg" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Bank Management System</h3>
 
-                <p class="project-category">Web design</p>
+                <!-- <p class="project-category">freelance</p> -->
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="Personal">
               <a href="#">
 
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
+                  <div class="project-item-icon-box" data-modal-target="#modal-cake">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/proj_img/cakeshop.jpg" alt="summary" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">Cake Shop Web Application</h3>
 
-                <p class="project-category">Web development</p>
+                <!-- <p class="project-category">Personal</p> -->
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
+            
 
           </ul>
 
@@ -1316,6 +1278,7 @@
 
 
 
+
   <!--
     - custom js link
   -->
@@ -1327,6 +1290,341 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+<!-- RECIPE APP MODAL -->
+<div class="modal-container" id="modal-recipe" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/proj_img/recipe_web_app.jpg" alt="Recipe Web App" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;" >Recipe Web Application</h4>
+      <p><div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">MYSQL</span>
+      </div></p>
+      <p>A full-featured recipe management web application built with Django. Features are as follows:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Built authentication flow (sign up/login) for users to manage their own recipe content.
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Enabled full CRUD operations on recipes across multiple categories.
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          Designed a clean interface to allow easy recipe searching and organization.
+        </li>
+      </ul>
+    
+      <a href="https://yummyrecipe.pythonanywhere.com/" target="_blank" class="btn">View Live</a>
+    </div>
+    
+  </section>
+</div>
+
+<!-- Kaalakshar APP MODAL -->
+<div class="modal-container" id="modal-kaalakshar" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/proj_img/kaalaskhar.jpg" alt="Recipe Web App" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;">Kaalakshar</h4>
+      <p><div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">MYSQL</span>
+      </div></p>
+      <p>A comprehensive website for a coaching institute that showcases class information, achievements, and supports buying/selling of art and craft items. Users can also make enquiries through the website. Key features include:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Designed and developed a fully responsive front-end using Bootstrap and custom CSS
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Implemented features such as class descriptions, course listings, enquiry forms, and achievements showcase
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          Integrated an e-commerce component to allow users to purchase art items online. Focused on enhancing user
+          engagement through clean UI and intuitive navigation.
+        </li>
+      </ul>
+    
+      <a href="http://kalaakshar.in/" target="_blank" class="btn">View Live</a>
+    </div>
+    
+  </section>
+</div>
+
+<!-- Food ordering APP MODAL -->
+<div class="modal-container" id="modal-food" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img src="./assets/images/proj_img/food_order.jpg" alt="Bhalde's Feast Web App" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;">Bhalde's Feast - Food Ordering Web Application</h4>
+      <p><div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">MYSQL</span>
+      </div></p>
+      <p>A full-featured web app that allows users to browse food items, explore multiple restaurants, manage a shopping cart, and access functionalities commonly found in food delivery platforms.Key features include:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Developed core modules for restaurant listings, food menus, cart management, and order processing workflows
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Implemented a user-friendly interface to simulate a real food delivery experience, similar to commercial platforms
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          Ensured responsive design and smooth user interaction across all devices using Bootstrap and custom styling
+        </li>
+      </ul>
+    
+      <a href="https://shreyas.pythonanywhere.com/" target="_blank" class="btn">View Live</a>
+    </div>
+    
+  </section>
+</div>
+
+<!-- music streaming APP MODAL -->
+<div class="modal-container" id="modal-closetunes" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img id="musicImg" src="./assets/images/proj_img/ct_songs.jpg" alt="Music App Screenshot" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;">CloseTunes - Music streaming platform</h4>
+      <p><div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">MYSQL</span>
+      </div></p>
+      <p>A hobby project built using the JioSaavn public API to stream music. The platform showcases default playlists and allows logged-in users to search, play, and manage their favorite songs.Key features include:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Displayed curated playlists on the homepage using API
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Enabled user authentication to login and then search and play songs.
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          Implemented "Add to Favorites" and "Remove from Favorites" functionality for logged-in users
+        </li>
+      </ul>
+    
+      <a href="https://closetunes.pythonanywhere.com/" target="_blank" class="btn">View Live</a>
+    </div>
+    
+  </section>
+</div>
+
+<!-- customer support APP MODAL -->
+<div class="modal-container" id="modal-customer_support" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img id="musicImg" src="./assets/images/proj_img/customer_support.jpg" alt="Customer Support" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;">Customer Support Web Application</h4>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Bootstrap</span>
+        <span class="tech-badge">SQLite3</span>
+      </div>
+        
+      <p>A web-based platform designed to streamline customer service operations. It allows users to register, submit service requests, upload documents, and communicate directly with support executives. The admin dashboard enables efficient request tracking and management features.Key features include:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Developed modules for user registration and request submissions (e.g., address change, refill requests)
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Integrated secure document upload functionality and in-app messaging between customers and support executive
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          Built an admin dashboard for tracking, managing, and responding to user requests in real time
+        </li>
+      </ul>
+    
+      <!-- <a href="https://closetunes.pythonanywhere.com/" target="_blank" class="btn">View Live</a> -->
+    </div>
+    
+  </section>
+</div>
+
+<!--bms APP MODAL -->
+<div class="modal-container" id="modal-bms" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img id="musicImg" src="./assets/images/proj_img/bms.jpg" alt="Customer Support" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;">Bank Management System</h4>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Flask</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">MYSQL</span>
+      </div>
+        
+      <p>A secure and interactive web application that simulates core internet banking operations. It allows users to manage their accounts, perform transactions, and access essential banking services. Admins can oversee user activity and manage account records with full CRUD functionality.Key features include:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Implemented user authentication (login/signup) and banking operations like money transfer, withdrawals, deposits, and account updates.
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Developed admin modules to create, update, and delete user accounts securely
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          Designed a clean, simple interface to simulate real-world internet banking experience
+        </li>
+      </ul>
+    
+      <!-- <a href="https://closetunes.pythonanywhere.com/" target="_blank" class="btn">View Live</a> -->
+    </div>
+    
+  </section>
+</div>
 </body>
 
+<!-- cake shop APP MODAL -->
+<div class="modal-container" id="modal-cake" style="display: none;">
+  <div class="overlay" data-close></div>
+
+  <section class="testimonials-modal">
+    <button class="modal-close-btn" data-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="modal-img-wrapper">
+      <figure class="modal-avatar-box">
+        <img id="musicImg" src="./assets/images/proj_img/cakeshop.jpg" alt="Cake shop" width="250">
+      </figure>
+    </div>
+
+    <div class="modal-content">
+      <h4 class="h3 modal-title" style="color: #ffd369;">Cake Shop Web Application</h4>
+      <div class="tech-stack">
+        <strong>Tech Stack:</strong>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">SQLite3</span>
+      </div>
+        
+      <p>A full-featured web app that allows users to browse cakes with differnet categories, manage a shopping cart, and access more functionalities.Key features include:</p>
+    
+      <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Created a clean and simple front-end layout to display cake categories and product details
+        </li>
+        <li style="color: #ffffff;  list-style-type: disc;">
+          Implemented product image gallery and pricing information for better customer experience
+        </li>
+        <li style="color: #ffffff; list-style-type: disc;">
+          User can shop the cake by adding in cart.
+        </li>
+      </ul>
+    
+      <!-- <a href="https://closetunes.pythonanywhere.com/" target="_blank" class="btn">View Live</a> -->
+    </div>
+    
+  </section>
+</div>
 </html>
+
+<script>
+  const images = [
+    "./assets/images/proj_img/ct_songs.jpg",
+    "./assets/images/proj_img/ct_playlist.png"
+  ];
+  let currentIndex = 0;
+  const imageElement = document.getElementById("musicImg");
+  console.log("test image:",imageElement)
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+  }, 3000);
+</script>

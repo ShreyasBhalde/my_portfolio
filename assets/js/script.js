@@ -157,3 +157,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Open modal
+document.querySelectorAll("[data-modal-target]").forEach(btn => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const modal = document.querySelector(this.getAttribute("data-modal-target"));
+    if (modal) modal.style.display = "flex";
+  });
+});
+
+// Close modal when clicking any element with data-close
+document.addEventListener("click", function (e) {
+  if (e.target.matches("[data-close], [data-close] *")) {
+    const modal = e.target.closest(".modal-container");
+    if (modal) modal.style.display = "none";
+  }
+});
+
+
