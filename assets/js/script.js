@@ -158,21 +158,40 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// === Modal open/close for project modals ===
+
 // Open modal
 document.querySelectorAll("[data-modal-target]").forEach(btn => {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
     const modal = document.querySelector(this.getAttribute("data-modal-target"));
-    if (modal) modal.style.display = "flex";
+    if (modal) {
+      modal.style.display = "flex";               // show modal
+      document.body.classList.add("modal-open");  // lock background scroll
+    }
   });
 });
 
-// Close modal when clicking any element with data-close
+// Close modal (on any [data-close] or overlay click)
 document.addEventListener("click", function (e) {
   if (e.target.matches("[data-close], [data-close] *")) {
     const modal = e.target.closest(".modal-container");
-    if (modal) modal.style.display = "none";
+    if (modal) {
+      modal.style.display = "none";               // hide modal
+      document.body.classList.remove("modal-open"); // unlock background scroll
+    }
   }
 });
+
+// Optional: close modal on ESC key
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".modal-container").forEach(modal => {
+      modal.style.display = "none";
+    });
+    document.body.classList.remove("modal-open");
+  }
+});
+
 
 
