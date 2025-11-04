@@ -1982,6 +1982,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   justify-content: center;
 }
 
+body.modal-open {
+  overflow: hidden;
+  height: 100%;
+}
+
 .testimonials-modal {
   display: flex;
   flex-wrap: wrap;
@@ -1992,6 +1997,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   border-radius: 12px;
   max-width: 960px;
   margin: auto;
+  position: relative;
 }
 
 .modal-img-wrapper {
