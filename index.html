@@ -209,11 +209,12 @@
 
         <section class="about-text">
           <p>
-            Certified full-stack developer with professional experience in building and maintaining web applications. Skilled in
-            both backend and frontend development using Python, Django, Flask, HTML, CSS, and JavaScript. Proficient in
-            database management with MySQL and PostgreSQL. Hands on experience with cloud services (AWS EC2, S3, RDS,
-            Lambda) and containerization using Docker. Focused on user-centered design and delivering responsive, efficient
-            solutions in collaborative environments.
+            Certified Full-Stack Developer with professional experience in designing, developing, and deploying scalable web
+            applications. Skilled in Python, Django, Flask, FASTAPI ,HTML, CSS, JavaScript, MySQL, and PostgreSQL, with
+            hands-on expertise in AWS (EC2, S3, RDS, Lambda) and Docker. Strong understanding of Generative AI concepts
+            and LLM integration using OpenAI and Gemini APIs, with practical knowledge of AI-driven backend development.
+            Focused on building efficient, secure, and user-centric solutions through modern technologies and collaborative
+            problem-solving
           </p>
 
           <!-- <p>
@@ -247,7 +248,7 @@
                 <h4 class="h4 service-item-title">Full-Stack Web Development</h4>
 
                 <p class="service-item-text">
-                 Building scalable and secure web applications using Django, HTML/CSS, JavaScript,Bootstrap and Databases.
+                  Scalable, secure web apps with Python, responsive UI, and robust databases.
                 </p>
               </div>
 
@@ -277,10 +278,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Deployment</h4>
+                <h4 class="h4 service-item-title">Cloud & DevOps Deployment</h4>
 
                 <p class="service-item-text">
-                  Experience deploying full-stack applications using AWS services (EC2, S3, RDS, Lambda) and Python Anywhere (Flask/Django with WSGI setup).
+                  Deploying full-stack applications using AWS (EC2, S3, RDS, Lambda), Docker, GitHub, and varous platforms , ensuring reliability, scalability, and automated workflows.
                 </p>
               </div>
 
@@ -289,14 +290,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-devops.svg" alt="DevOps icon" width="40">
+                <img src="./assets/images/icon-ai-brain.svg" alt="DevOps icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">DevOps & Automation</h4>
+                <h4 class="h4 service-item-title">Generative AI Development</h4>
 
                 <p class="service-item-text">
-                  Using Docker for containerization and automating repetitive tasks to streamline development workflows.
+                  Building intelligent backend systems powered by Large Language Models (LLMs) using OpenAI and Gemini APIs, focused on AI-assisted query generation and automation.
                 </p>
               </div>
 
@@ -564,6 +565,7 @@
               <img src="./assets/images/github.png" alt="Git" width="40">
               <p>Git</p>
             </div>
+            
           </div>
         </section>
         
@@ -673,13 +675,32 @@
               <p class="timeline-text">
                Mindmatrix Services Private Limited, Guwahati
               </p>
-              <span>2024 — Present</span>
+              <span>March 2024 — Present</span>
 
               <div class="timeline-text">
                 <ul>
-                  <li>Developed full-stack web modules for multiple government projects using Django, HTML, CSS, JavaScript, Bootstrap, and PostgreSQL.</li>
-                  <li>Designed and implemented APIs handling 10K+ daily records transmitted to central government databases, achieving 99.9% uptime.</li>
-                  <li>Integrated Django Celery for task scheduling and applied database optimization techniques to improve performance and response time.</li>
+                  <li>Developed and maintained <strong>large-scale state government web applications</strong> using <strong>Django, PostgreSQL, and Celery</strong>.</li>
+                
+                  <li><strong>Key Projects:</strong></li>
+                
+                  <li>
+                    <strong class="highlight">State Government Job Portal</strong> - A large-scale platform handling 
+                    <strong>30+ lakh applicant records</strong> and exchanging <strong>5K+ records daily</strong> with central government APIs. 
+                    Built multi-role access modules (<em>Applicant, District Exchange, Department, Recruiter</em>) and optimized performance through 
+                    query tuning and Celery task scheduling.
+                  </li>
+                
+                  <li>
+                    <strong class="highlight">State Career Counselling Portal</strong> - A multi-user platform for 
+                    <strong>Counsellors, Applicants, and Department officials</strong> featuring counsellor onboarding, approval workflows, 
+                    session scheduling, and helpdesk issue management with MIS reporting.
+                  </li>
+                
+                  <li>Implemented <strong>database optimization</strong> and <strong>Celery-based task automation</strong> to enhance reliability and response time.</li>
+                
+                  <li>Collaborated with a cross-functional team to design REST APIs, automate data synchronization, and implement secure authentication mechanisms.</li>
+                
+                  <li>Improved dashboard performance by reducing load time from <strong>45s to under 2s</strong> through advanced query optimization and caching strategies.</li>
                 </ul>
               </div>
               
@@ -811,8 +832,9 @@
             </div>
         
             <div class="skill-category">
-              <h4 class="skill-category-title">Tools</h4>
-              <p>Postman, VS Code, Jupyter, PyCharm, PgAdmin</p>
+              <h4 class="skill-category-title">AI & LLM Technologies :</h4>
+              <p>Generative AI Concepts, Large Language Models (LLMs), OpenAI API, Gemini API, Vector
+                Databases</p>
             </div>
         
             <div class="skill-category">
@@ -837,6 +859,7 @@
 
         <header>
           <h2 class="h2 article-title">projects</h2>
+          <p class="project-note">Click on a <strong>project image</strong> to view details.</p>
         </header>
 
         <section class="projects">
@@ -861,11 +884,11 @@
 
           </ul>
 
-          <div class="filter-select-box" style="display: none;>
+          <div class="filter-select-box" style="display: none;">
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <!-- <div class="select-value" data-selecct-value>Select category</div> -->
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -894,8 +917,22 @@
             </ul>
 
           </div>
-
+          
           <ul class="project-list">
+            
+            <li class="project-item active" data-filter-item data-category="personal">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box" data-modal-target="#modal-genai">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/proj_img/dataqueryai_by_shreyas_comp.png" alt="genai Web App" loading="lazy">
+                </figure>
+                <h3 class="project-title">Dataqueryai - LLM-powered Natural Language Query Engine
+                </h3>
+                <!-- <p class="project-category">personal</p> -->
+              </a>
+            </li>
 
             <li class="project-item active" data-filter-item data-category="personal">
               <a href="#" class="project-link">
@@ -922,7 +959,7 @@
                   <img src="./assets/images/proj_img/kaalaskhar.jpg" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Kaalakshar – Coaching Class Platform</h3>
+                <h3 class="project-title">Kaalakshar - Coaching Class Platform</h3>
 
                 <!-- <p class="project-category">personal</p> -->
 
@@ -1279,9 +1316,7 @@
 
 
 
-  <!--
-    - custom js link
-  -->
+
   <script src="./assets/js/script.js"></script>
 
   <!--
@@ -1289,6 +1324,54 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Genai APP MODAL -->
+  <div class="modal-container" id="modal-genai" style="display: none;">
+    <div class="overlay" data-close></div>
+  
+    <section class="testimonials-modal">
+      <button class="modal-close-btn" data-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+  
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img src="./assets/images/proj_img/dataqueryai_by_shreyas_comp.png" alt="Genai Web App" width="250">
+        </figure>
+      </div>
+  
+      <div class="modal-content">
+        <h4 class="h3 modal-title" style="color: #ffd369;" >LLM-powered Natural Language Query Engine</h4>
+        <p><div class="tech-stack">
+          <strong>Tech Stack:</strong>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Bootstrap5</span>
+          <span class="tech-badge">MYSQL</span>
+        </div></p>
+        <p>An intelligent backend powered by LLMs for natural language-based database querying. Features are as follows:</p>
+      
+        <ul style="margin-top: 1rem; padding-left: 1.5rem; list-style-type: disc; list-style-position: inside;">
+          <li style="color: #ffffff;  list-style-type: disc;">
+            It's an AI-powered system that converts natural language queries into SQL, translates results into user-friendly
+            responses, and displays outputs directly from the database.
+          </li>
+          <li style="color: #ffffff;  list-style-type: disc;">
+            Optimized query flow to reduce LLM API calls and enhance performance
+          </li>
+          <li style="color: #ffffff; list-style-type: disc;">
+            Designed with FastAPI's modular architecture for seamless integration with any application or database via
+      RESTful APIs
+          </li>
+        </ul>
+      
+        <a href="https://dataqueryai.shreyasbhalde.in/" target="_blank" class="btn">View Live</a>
+      </div>
+      
+    </section>
+  </div>
 
 <!-- RECIPE APP MODAL -->
 <div class="modal-container" id="modal-recipe" style="display: none;">
@@ -1330,7 +1413,7 @@
         </li>
       </ul>
     
-      <a href="https://yummyrecipe.shreyasbhalde.in/" target="_blank" class="btn">View Live</a>
+      <a href="https://yummyrecipe.pythonanywhere.com/" target="_blank" class="btn">View Live</a>
     </div>
     
   </section>
@@ -1423,7 +1506,7 @@
         </li>
       </ul>
     
-      <a href="https://bhaldesfeast.shreyasbhalde.in/" target="_blank" class="btn">View Live</a>
+      <a href="https://shreyas.pythonanywhere.com/" target="_blank" class="btn">View Live</a>
     </div>
     
   </section>
