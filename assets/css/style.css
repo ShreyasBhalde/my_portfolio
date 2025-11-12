@@ -2069,4 +2069,36 @@ body.modal-open {
   border-radius: 4px;
   font-size: 0.85rem;
 }
+.tech-item img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-item:hover img {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+.tech-item p {
+  transition: color 0.3s ease;
+}
+
+.tech-item:hover p {
+  color: #FFD43B; /* your yellow accent */
+}
+.highlight {
+  color: rgb(206 177 90); /* your yellow accent */
+  font-weight: 600;
+}
+
+.project-note {
+  color: #ccc;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 1.5rem;
+}
+
+.project-note strong {
+  color: #FFD369;
+  font-weight: 600;
+}
 
