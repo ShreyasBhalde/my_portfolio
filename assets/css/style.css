@@ -1890,11 +1890,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-top: 20px;
 } */
 
-.tech-item {
-  text-align: center;
-  font-size: 40px;
-  color: white;
-}
 
 .tech-item p {
   margin-top: 8px;
@@ -1912,12 +1907,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
   color: white;
   font-size: 14px;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-item img {
   width: 40px;
-  margin-bottom: 8px;
-  transition: transform 0.3s ease;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .tech-item img:hover {
